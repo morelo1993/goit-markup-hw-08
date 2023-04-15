@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>WebStudio</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="css/styless.css" />
+    </head>
+<body>
+    <header class="container">
+        <div class="post-header">
+        <nav class="post-nav">
+            <a href="#" class="logo"><span class="span-logo">WebStudio</span></a>
+            <ul class="header-menu">
+                <li>
+                    <a class="header-post current" href="./index.html">Estudio </a>
+                </li>
+                <li>
+                    <a class="header-post " href="./portafolio.html">Portafolio </a>
+                </li>
+                <li><a class="header-post" href="">Contactos </a></li>
+            </ul>
+        </nav>
+        <ul class="contact">
+			<li class="">
+				<a class="ico-nav" href="mailto:info@devstudio.com">
+				<svg width="16" height="12">
+					<use href="img/iconos-re.svg#icon-sobre" />
+				</svg> info@devstudio.com</a>
+			</li>
+			<li class="">
+            <a class="ico-nav" href="tel:+525555296000">
+              <svg width="10" height="16">
+                <use href="img/iconos-re.svg#icon-telfono-inteligente" />
+              </svg> +52 55 5529 6000</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <section class="fondo-h1">
+        <h1 class="test-h1">SOLUCIONES EFICACES PARA SU NEGOCIO</h1>
+        <button class="button-h1" type="button" data-modal-open>
+          solicite nuestro servicio
+        </button>
+
+        <div class="modal is-hidden" data-modal>
+          <div class="modal-cont">
+            <button data-modal-close class="c-btn">&Chi;</button>
+                <form action="" method="POST">
+                  <h1>Deje sus datos, nos contactaremos con usted</h1>
+                  <br>
+                    <div class="form-group">
+                        <label for="nombre">Nombre:</label>
+                        <div class="input-group">
+                            <span class="input-group-icon">
+                                <svg class="icono-usuario">
+                                    <use xlink:href="img/ico-form.svg#icon-persona-negra-18dp-1"></use>
+                                </svg>
+                            </span>
+                            <input type="text" id="nombre" name="nombre" class="form-control" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="telefono">Teléfono:</label>
+                        <div class="input-group">
+                            <span class="input-group-icon">
+                                <svg class="icono-telefono">
+                                    <use xlink:href="img/ico-form.svg#icon-telfono-negro-18dp-1"></use>
+                                </svg>
+                            </span>
+                            <input type="text" id="telefono" name="telefono" class="form-control" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Correo electrónico:</label>
+                        <div class="input-group">
+                            <span class="input-group-icon">
+                                <svg class="icono-correo">
+                                    <use xlink:href="img/ico-form.svg#icon-correo-electrnico-negro-18dp-1"></use>
+                                </svg>
+                            </span>
+                            <input type="email" id="email" name="email" class="form-control" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="comentarios">Comentarios:</label>
+                        <div class="input-group">
+                            <textarea id="comentarios" name="comentarios" class="text-area"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="input-group">
+                            <input type="checkbox" id="aceptar" name="aceptar" class="checkbox"/>
+                            <label for="aceptar">Estoy de acuerdo con el boletín informativo y acepto los Términos y Condiciones</label>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn-m boton-enviar">Enviar</button>
+                </form>
+          </div>
+        </div>
+
+      </section>
+
+      <section class="container">
+        <ul class="services-ul">
+          <li class="list">
+            <div class="iconos">
+                <img class="iconos-in" src="img/ico-a.svg" alt="ico">
+            </div>
+            <h3 class="titulos">ATENCION A LOS DETALLES</h3>
+            <p class="parrafo">
+              nos adentramos en todos los detalles y procesos de su negocio,
+              para asi desarrollar una solucion a su medida
+            </p>
+          </li>
+          <li class="list">
+            <div class="iconos">
+                <img class="iconos-in" src="img/ico-reloj-2.svg" alt="ico">
+            </div>
+            <h3 class="titulos">PUNTUALIDAD</h3>
+            <p class="parrafo">
+              Con nosotros, usted puedes sentirse seguro y protegido. Un
+              pricipio importante de la empresa: respetar su tiempo y respetar
+              los plazos acordados.
+            </p>
+          </li>
+          <li class="list">
+            <div class="iconos">
+                <img class="iconos-in" src="img/ico-pc-2.svg" alt="ico">
+            </div>
+            <h3 class="titulos">PLANIFICACION</h3>
+            <p class="parrafo">
+              Usted podrá observar y participar en cada fase del desarrollo y
+              aplicación de soluciones.
+            </p>
+          </li>
+          <li class="list">
+            <div class="iconos">
+                <img class="iconos-in" src="img/ico-per-2.svg" alt="ico">
+            </div>
+            <h3 class="titulos">TEGNOLOGÍA MODERNA</h3>
+            <p class="parrafo">
+              Usamos herramientas innovadoras para resolver las tareas
+              asignadas. Es hora de simplificar los procesos laborales.
+            </p>
+          </li>
+        </ul>
+      </section>
+
+      <section class="container">
+        <div class="about">
+          <h2 class="subtitulo">A qué nos dedicamos</h2>
+          <ul class="son-list">
+            <li class="list-about">
+              <img src="img/photo1.jpg" width="373" alt="programando" />
+              <div class="list-about-text">APLICACIONES DE ESCRITORIO</div>
+            </li>
+            <li class="list-about">
+              <img src="img/photo2.jpg" width="373" alt="conectando" />
+              <div class="list-about-text">APLICACIONES MOVILES</div>
+            </li>
+            <li class="list-about">
+              <img src="img/photo3.jpg" width="373" alt="viendo resultados" />
+              <div class="list-about-text">SOLUCIONES DE DISEÑO</div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section>
+        <div class="color-e">
+          <div class="container">
+            <h2 class="subtitulo">Nuestro Equipo</h2>
+            <ul class="images-index">
+              <li class="list-e">
+                <img src="img/andres.jpg" width="270" alt="tutor" />
+                <h3 class="name">Andrés Cubo</h3>
+                <p class="p-h3">Diseñador de Productos</p>
+                <ul class="iconos-equipo">
+                  <li class="iconos-items">
+                    <svg width="20" height="20">
+                      <use href="img/redes.svg#icon-instagram-2" />
+                    </svg>
+                  </li>
+                  <li class="iconos-items">
+                    <svg width="20" height="20">
+                      <use href="img/redes.svg#icon-twitter-1" />
+                    </svg>
+                  </li>
+                  <li class="iconos-items">
+                    <svg width="20" height="20">
+                      <use href="img/redes.svg#icon-facebook-1" />
+                    </svg>
+                  </li>
+                  <li class="iconos-items">
+                    <svg width="20" height="20">
+                      <use href="img/redes.svg#icon-linkedin-1" />
+                    </svg>
+                  </li>
+                </ul>
+              </li>
+              <li class="list-e">
+                <img src="img/carla.jpg" width="270" alt="tutora" />
+                <h3 class="name">Carla Palacios</h3>
+                <p class="p-h3">Desarrolladora Frontend</p>
+                <ul class="iconos-equipo">
+                  <li class="iconos-items">
+                    <svg width="20" height="20">
+                      <use href="img/redes.svg#icon-instagram-2" />
+                    </svg>
+                  </li>
+                  <li class="iconos-items">
+                    <svg width="20" height="20">
+                      <use href="img/redes.svg#icon-twitter-1" />
+                    </svg>
+                  </li>
+                  <li class="iconos-items">
+                    <svg width="20" height="20">
+                      <use href="img/redes.svg#icon-facebook-1" />
+                    </svg>
+                  </li>
+                  <li class="iconos-items">
+                    <svg width="20" height="20">
+                      <use href="img/redes.svg#icon-linkedin-1" />
+                    </svg>
+                  </li>
+                </ul>
+              </li>
+              <li class="list-e">
+                <img src="img/mario.jpg" width="270" alt="tutor" />
+                <h3 class="name">Mario Dorado</h3>
+                <p class="p-h3">Marketing</p>
+                <ul class="iconos-equipo">
+                  <li class="iconos-items">
+                    <svg width="20" height="20">
+                      <use href="img/redes.svg#icon-instagram-2" />
+                    </svg>
+                  </li>
+                  <li class="iconos-items">
+                    <svg width="20" height="20">
+                      <use href="img/redes.svg#icon-twitter-1" />
+                    </svg>
+                  </li>
+                  <li class="iconos-items">
+                    <svg width="20" height="20">
+                      <use href="img/redes.svg#icon-facebook-1" />
+                    </svg>
+                  </li>
+                  <li class="iconos-items">
+                    <svg width="20" height="20">
+                      <use href="img/redes.svg#icon-linkedin-1" />
+                    </svg>
+                  </li>
+                </ul>
+              </li>
+              <li class="list-e">
+                <img src="img/pablo.jpg" width="270" alt="tutor" />
+                <h3 class="name">Pablo Mijangos</h3>
+                <p class="p-h3">Diseñador IU</p>
+                <ul class="iconos-equipo">
+                  <li class="iconos-items">
+                    <svg width="20" height="20">
+                      <use href="img/redes.svg#icon-instagram-2" />
+                    </svg>
+                  </li>
+                  <li class="iconos-items">
+                    <svg width="20" height="20">
+                      <use href="img/redes.svg#icon-twitter-1" />
+                    </svg>
+                  </li>
+                  <li class="iconos-items">
+                    <svg width="20" height="20">
+                      <use href="img/redes.svg#icon-facebook-1" />
+                    </svg>
+                  </li>
+                  <li class="iconos-items">
+                    <svg width="20" height="20">
+                      <use href="img/redes.svg#icon-linkedin-1" />
+                    </svg>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+
+    <!-- SECCION CLIENTES REGULARES -->
+    <section>
+      <div class="color-cr">
+        <div class="container">
+          <h2 class="subtitulo">Clientes Regulares</h2>
+          <ul class="iconos-cr">
+            <li class="list-cr">
+              <svg class="iconos-re">
+                <use href="img/iconos-re.svg#icon-grupo-3" />
+              </svg>
+            </li>
+            <li class="list-cr">
+              <svg class="iconos-re">
+                <use href="img/iconos-re.svg#icon-grupo-2" />
+              </svg>
+            </li>
+            <li class="list-cr">
+              <svg class="iconos-re">
+                <use href="img/iconos-re.svg#icon-grupo-1" />
+              </svg>
+            </li>
+            <li class="list-cr">
+              <svg class="iconos-re">
+                <use href="img/iconos-re.svg#icon-grupo" />
+              </svg>
+            </li>
+            <li class="list-cr">
+              <svg class="iconos-re">
+                <use href="img/iconos-re.svg#icon-Logo-1" />
+              </svg>
+            </li>
+            <li class="list-cr">
+              <svg class="iconos-re">
+                <use href="img/iconos-re.svg#icon-Logo" />
+              </svg>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- FIN DE LA SECCION CLIENTES REGULARES -->
+
+
+    </main>
+    <footer>
+      <div class="footer">
+        <div class="container">
+          <div class="left-f">
+            <a href="#" class="logo"><span class="span-logo">WebStudio</span></a>
+            <address class="direccion-footer">
+              <ul class="ul-footer">
+                <p class="info-pie">Calz. Ticomán 500, Ciudad de México, CDMX, México</p>
+                <p class="info-pie-f">info@example.com</p><br>
+                <p class="info-pie-f">+52 55 5529 6000</p>
+              </ul>
+            </address>
+          </div>
+          <div class="center-f">
+            <p class="p-f">ENCUENTRENOS EN</p>
+            <br>
+            <span class="redes-f">
+              <a href="#" class="iconos-ft">
+                <svg width="20" height="20">
+                  <use href="img/redes.svg#icon-instagram-2" />
+                </svg>
+              </a>
+              <a href="#" class="iconos-ft">
+                <svg width="20" height="20">
+                  <use href="img/redes.svg#icon-twitter-1" />
+                </svg>
+              </a>
+              <a href="#" class="iconos-ft">
+                <svg width="20" height="20">
+                  <use href="img/redes.svg#icon-facebook-1" />
+                </svg>
+              </a>
+              <a href="#" class="iconos-ft">
+                <svg width="20" height="20">
+                  <use href="img/redes.svg#icon-linkedin-1" />
+                </svg>
+              </a>
+            </span>
+          </div>
+          <div class="right-f">
+            <p class="p-f">SUSCRÍBASE AL BOLETÍN INFORMATIVO</p>
+            <br>
+            <div class="email-form">
+              <input class="e-ft" type="email" placeholder="Correo electrónico">
+              <button type="submit">SUSCRIBASE
+                <svg width="20" height="20" class="s-ft"> 
+                  <use href="img/iconos-re.svg#icon-enviar-cono"/>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" type="text/css" defer=""></script>
+    <script src="js/modal.js" defer=""></script>
+  </body>
+</html>
