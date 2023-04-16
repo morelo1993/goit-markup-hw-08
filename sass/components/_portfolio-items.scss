@@ -1,0 +1,43 @@
+.portfolio-list {
+  @include portfolio-list(column, 30px);
+  @media (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+.portfolio-list__item {
+  flex-basis: calc((100% - 90px) / 3);
+  @media (min-width: 768px) {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+  @media (min-width: 1200px) {
+    flex-basis: calc((100% - 90px) / 3);
+  }
+
+  &:hover {
+    @include box-shadow($horiz: 0px, $vert: 1px, $blur: 3px);
+    border: 1px solid #eeeeee;
+  }
+}
+.portfolio-list__thumb {
+  position: relative;
+  overflow: hidden;
+}
+
+.portfolio-list__thumb:hover .portfolio-list__effect {
+  transform: translateX(0);
+}
+.portfolio-list__effect {
+  @extend %portfolio-list__effect;
+}
+.portfolio-list__text {
+  @extend %portfolio-list__text;
+}
+.portfolio-title {
+  @extend %portfolio-title;
+}
+.portfolio-text {
+  @extend %portfolio-text;
+}

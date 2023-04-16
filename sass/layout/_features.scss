@@ -1,0 +1,33 @@
+.features {
+  @include flexfeature(column, 30px);
+  @media (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  @media (min-width: 1200px) {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+  .feature-list__item {
+    flex-basis: calc((100% - 120px) / 4);
+    @media (min-width: 768px) {
+      flex-basis: calc((100% - 30px) / 2);
+    }
+  }
+}
+
+.feature-list__icon {
+  @include feature-list__icon(center, center, 120px);
+  background: #f5f4fa;
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+.feature-list__title {
+  @extend %feature-list__title;
+}
+.feature-list__desciption {
+  @extend %feature-list__desciption;
+}

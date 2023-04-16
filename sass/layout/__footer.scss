@@ -1,0 +1,36 @@
+.footer {
+  padding: 60px 0;
+  background-color: $background-black;
+}
+
+.logo {
+  @extend %navbar__logo;
+  display: block;
+  margin-bottom: 20px;
+}
+.address {
+  @extend %address;
+}
+.contact__footer {
+  @extend %contact__footer;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+.footer-flexbox {
+  @include footer-flexbox(wrap, center, center, 30px);
+  @media (min-width: 1200px) {
+    justify-content: space-between;
+    text-align: left;
+  }
+}
+.footer-title {
+  @extend %footer-title;
+}
+.footer-list-item {
+  display: flex;
+  gap: 10px;
+}

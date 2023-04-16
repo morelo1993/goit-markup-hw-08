@@ -1,0 +1,45 @@
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 320px;
+
+  background: $primary-white-color;
+
+  transform: translate(-50%, -50%);
+  transition: transform 500ms ease-out;
+  @media (min-width: 480px) {
+    width: 100svw;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  @media (min-width: 768px) {
+    width: 450px;
+  }
+}
+
+.close-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  border-radius: 25px;
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+
+  &:hover {
+    fill: $accent-color;
+    transform: rotate(360deg);
+    transition: transform 500ms ease;
+  }
+}
+// @media (min-width: 480px) {
+//   .modal {
+//     width: 450px;
+//     left: 3%;
+//     top: 2%;
+//   }
+// }

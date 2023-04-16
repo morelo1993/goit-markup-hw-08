@@ -1,0 +1,54 @@
+.team {
+  @include team($background-light);
+}
+.team-members {
+  @include team-members(column, 30px);
+  @media (min-width: 768px) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  @media (min-width: 1200px) {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+}
+.team-members__item {
+  flex-basis: calc(100% - 120px / 4);
+  @include box-shadow($horiz: 0px, $vert: 1px, $blur: 3px);
+  @include border-radius(0px 4px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @media (min-width: 768px) {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+}
+.team-members__title {
+  @extend %team-members__title;
+}
+.team-members__text {
+  @extend %team-members__text;
+}
+.teamcard-links {
+  @include teamcard-links(center, center, 15px);
+}
+
+// @media (min-width: 768px) {
+//   .img {
+//     width: 80%;
+//     height: auto;
+//   }
+//   .team-members {
+//     display: flex;
+//     flex-wrap: wrap;
+//     flex-direction: row;
+//   }
+//   .team-members__item {
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     width: 45%;
+//   }
+// }

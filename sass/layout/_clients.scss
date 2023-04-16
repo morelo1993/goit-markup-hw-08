@@ -1,0 +1,20 @@
+.clients-list {
+  @include clients-list(wrap, center);
+  gap: 30px;
+  @media (min-width: 1200px) {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+}
+.clients-list__item {
+  flex-basis: calc((100% - 30px) / 2);
+  @include clients-list__item(center, center);
+  @extend %clients-list__item;
+  fill: $primary-text-color;
+
+  &:hover {
+    border-color: $accent-color;
+    fill: $accent-color;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}

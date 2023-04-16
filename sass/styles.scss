@@ -1,0 +1,29 @@
+// UTILS
+@import './utils/variables';
+@import './utils/placeholders';
+@import './utils/mixins';
+@import './utils/visually-hidden';
+
+// BASE
+@import 'base/normalize';
+@import './base/container';
+
+// COMPONENTS
+@import './components/_subtitle';
+@import './components/icons';
+@import './components/footer-form';
+@import './components/portfolio-filters';
+@import './components/portfolio-items';
+@import './components/backdrop';
+@import './components/modal-window';
+@import './components/modal-form';
+// LAYOUT
+@import './layout/header';
+@import './layout/hero';
+@import './layout/features';
+@import './layout/what-we';
+@import './layout/team';
+@import './layout/clients';
+@import './layout/_footer';
+@import './layout/menu';
+@import './layout/mobile-menu';

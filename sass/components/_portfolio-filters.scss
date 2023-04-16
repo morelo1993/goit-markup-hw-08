@@ -1,0 +1,19 @@
+.filters-list {
+  @include filters-list1(wrap, 20px, 50px);
+  @media (min-width: 1200px) {
+    justify-content: center;
+  }
+}
+.filter__buttons {
+  @extend %filter__buttons;
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: $accent-color;
+    color: $primary-white-color;
+  }
+}
+.filter__current {
+  background-color: $accent-color;
+  color: $primary-white-color;
+}

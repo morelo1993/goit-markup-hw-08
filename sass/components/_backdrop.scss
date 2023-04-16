@@ -1,0 +1,28 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+
+  &.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transform: translateY(-100vh);
+    transition: transform 700ms ease-out;
+  }
+  &.is-hidden .modal {
+    transform: translateY(-100vh);
+    transition: transform 700ms ease-out;
+  }
+}
+@media screen and (min-width: 480px) {
+  .modal {
+    width: 450px;
+  }
+}

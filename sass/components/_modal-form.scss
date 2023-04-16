@@ -1,0 +1,102 @@
+.modal-form {
+  @include modal-form(column);
+  padding: 40px;
+}
+
+.modal-form-title {
+  @extend %modal-form-title;
+}
+
+.modal-form__label {
+  @extend %modal-form-label;
+
+  &:focus-within {
+    fill: $accent-color;
+  }
+
+  .modal-form__input {
+    @extend %modal-form__input;
+
+    &:hover,
+    &:focus {
+      outline: transparent;
+      border: 1px solid $accent-color;
+    }
+  }
+}
+
+.modal-form__icon {
+  @extend %modal-form__icon;
+}
+
+.modal-form-field {
+  @extend %modal-form-field;
+}
+
+.modal-form-message {
+  @extend %modal-form-message;
+
+  &:focus {
+    outline: none;
+    border-color: $accent-color;
+  }
+
+  &::placeholder {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16;
+    color: rgba(117, 117, 117, 0.5);
+  }
+}
+.modal-form-checkbox {
+  @extend %modal-form-checkbox;
+}
+.modal-form-label-checkbox {
+  @include modal-form-label-checkbox(center, center);
+  @extend %modal-form-label-checkbox;
+}
+
+.modal-form-icon-check {
+  @extend %modal-form-icon-check;
+  @media (min-width: 480px) {
+    width: 20px;
+    height: 15px;
+  }
+}
+.modal-form-label-checkbox:hover .modal-form-icon-check {
+  background-color: rgba(126, 122, 122, 0.1);
+}
+
+.modal-form-label-checkbox:active .modal-form-icon-check {
+  border: 2px solid rgba(107, 99, 99, 0.7);
+}
+.modal-form-checkbox:checked + .modal-form-icon-check {
+  border-radius: 2px;
+  border-color: $accent-color;
+  background-color: $accent-color;
+  background-image: url(../images/iconcheck.svg);
+  background-origin: border-box;
+}
+
+.modal-form-text {
+  padding: 20px 20px;
+  font-style: normal;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.15;
+  letter-spacing: 0.03em;
+}
+.modal-form-text:hover,
+.modal-form-text:hover .link-checkbox,
+.modal-form-link-checkbox-checkbox:hover {
+  color: rgba(33, 33, 33, 0.9);
+}
+.modal-form-link-checkbox {
+  text-decoration: underline;
+  color: $accent-color;
+}
+.modal-form-submit {
+  @include modal-form-submit(center, center);
+  @extend %modal-form-submit;
+}

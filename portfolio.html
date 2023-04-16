@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.min.css" />
+  <title>Web Studio</title>
+</head>
+
+<body>
+  <!-- Header section -->
+  <header class="header">
+    <div class="container header-container">
+      <nav class="navbar">
+        <!-- Logo -->
+        <a class="navbar__logo" href="index.html">WebStudio</a>
+        <!-- Menu -->
+        <ul class="navbar__menu">
+          <li class="navbar__item">
+            <a class="navbar__link" href="index.html">Estudio</a>
+          </li>
+          <li class="navbar__item">
+            <a class="navbar__link current" href="portfolio.html">Portafolio</a>
+          </li>
+          <li class="navbar__item">
+            <a class="navbar__link" href=" index.html">Contactos</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="menu__container" data-menu-open>
+        <svg class="menu__icon" width="40" height="40">
+          <use href="./images/icons.svg#icon-menu_40px"></use>
+        </svg>
+      </div>
+
+      <!-- Contacts -->
+      <ul class="booking">
+        <li>
+          <a class="booking__link" href="#">
+            <svg class="booking__icon email">
+              <use href="./images/icons.svg#email"></use>
+            </svg>
+            info@devstudio.com
+          </a>
+        </li>
+        <li>
+          <a class="booking__link" href="#">
+            <svg class="booking__icon smartphone">
+              <use href="./images/icons.svg#smartphone"></use>
+            </svg>
+            +52 55 55 29 60 00
+          </a>
+        </li>
+      </ul>
+    </div>
+  </header>
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" data-menu>
+    <button class="mobile-menu__closer" type="button" data-menu-close>
+      <svg class="mobile-menu__icon" width="40" height="40">
+        <use href="./images/icons.svg#icon-close"></use>
+      </svg>
+    </button>
+    <div class="mobile-menu__container">
+      <ul class="mobile-menu__navigation list">
+        <li class="mobile-menu__item">
+          <a class="mobile-menu__link mobile-menu__link--nav mobile-menu__link--current link" href="./index.html"
+            data-menu-close>Estudio</a>
+        </li>
+        <li class="mobile-menu__item">
+          <a class="mobile-menu__link mobile-menu__link--nav link" href="./portfolio.html">Portafolio</a>
+        </li>
+        <li class="mobile-menu__item">
+          <a class="mobile-menu__link mobile-menu__link--nav link" href="./index.html" data-menu-close>Contacto</a>
+        </li>
+      </ul>
+      <div class="mobile-menu__wrapper">
+        <ul class="mobile-menu__contacts list">
+          <li class="mobile-menu__item">
+            <a class="mobile-menu__link mobile-menu__link--tel link" href="tel:+380961111111">+38 096 111 11 11</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a class="mobile-menu__link mobile-menu__link--mail link"
+              href="mailto:info@devstudio.com">info@devstudio.com</a>
+          </li>
+        </ul>
+        <ul class="mobile-menu__social list">
+          <li class="mobile-menu__item--social">
+            <a class="mobile-menu__link mobile-menu__link--social link" href="#" target="_blank"
+              rel="noopener noreferrer">Instagram</a>
+          </li>
+          <li class="mobile-menu__item--social">
+            <a class="mobile-menu__link mobile-menu__link--social link" href="#" target="_blank"
+              rel="noopener noreferrer">Twitter</a>
+          </li>
+          <li class="mobile-menu__item--social">
+            <a class="mobile-menu__link mobile-menu__link--social link" href="#" target="_blank"
+              rel="noopener noreferrer">Facebook</a>
+          </li>
+          <li class="mobile-menu__item--social">
+            <a class="mobile-menu__link mobile-menu__link--social link" href="#" target="_blank"
+              rel="noopener noreferrer">LinkedIn</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <!-- Filters and PortFolio -->
+    <section class="pt pb filter">
+      <div class="container">
+        <h2 hidden>Portafolio</h2>
+        <!-- Menu tabs  -->
+        <ul class="filters-list">
+          <li>
+            <button class="filter__buttons filter__current" type="button">Todo</button>
+          </li>
+          <li>
+            <button class="filter__buttons" type="button">Sitios-web</button>
+          </li>
+          <li class="filter__items">
+            <button class="filter__buttons" type="button">Aplicaciones</button>
+          </li>
+          <li>
+            <button class="filter__buttons" type="button">Diseño</button>
+          </li>
+          <li>
+            <button class="filter__buttons" type="button">Marketing</button>
+          </li>
+        </ul>
+        <!-- PortFolio -->
+        <h2 hidden>Portafolio</h2>
+        <!-- card list  -->
+        <ul class="portfolio-list">
+          <li class="portfolio-list__item">
+            <a href="#" class="portfolio__link">
+              <div class="portfolio-list__thumb">
+                <picture>
+                  <source media="(min-width: 768px)" srcset="
+                                          ./images/tablet/portafolio/tecnoduck.webp    1x,
+                                          ./images/tablet/portafolio/tecnoduck@2x.webp 2x
+                                        " type="image/webp" />
+
+                  <source media="(min-width: 768px)" srcset="
+                                          ./images/tablet/portafolio/tecnoduck.jpg    1x,
+                                          ./images/tablet/portafolio/tecnoduck@2x.jpg 2x
+                                        " />
+
+                  <source media="(min-width: 280px)" srcset="
+                                          ./images/mobile/portafolio/tecnoduck.webp    1x,
+                                          ./images/mobile/portafolio/tecnoduck@2x.webp 2x
+                                        " type="image/webp" />
+
+                  <source media="(min-width: 280px)" srcset="
+                                          ./images/mobile/portafolio/tecnoduck.jpg    1x,
+                                          ./images/mobile/portafolio/tecnoduck@2x.jpg 2x
+                                        " />
+
+                  <img src="./images/mobile/portafolio/tecnoduck.jpg" alt="TecnoCrack website" />
+                </picture>
+
+                <div class="portfolio-list__effect">
+                  <p class="portfolio-list__text">
+                    Tecnoduck es una plataforma de distribución de coronavirus de última generación. Las compañías usan
+                    esta plataforma para
+                    el espionaje digital y los ataques a los servidores seguros de la competencia.
+                  </p>
+                </div>
+              </div>
+              <h2 class="portfolio-title">Tecnoduck</h2>
+              <p class="portfolio-text">Sitio-web</p>
+            </a>
+          </li>
+
+          <li class="portfolio-list__item">
+            <a href="#" class="portfolio__link">
+              <div class="portfolio-list__thumb">
+                <picture>
+                  <source media="(min-width: 768px)" srcset="
+                                                        ./images/tablet/portafolio/poster.webp    1x,
+                                                        ./images/tablet/portafolio/poster@2x.webp 2x
+                                                      " type="image/webp" />
+
+                  <source media="(min-width: 768px)" srcset="
+                                                        ./images/tablet/portafolio/poster.jpg    1x,
+                                                        ./images/tablet/portafolio/poster@2x.jpg 2x
+                                                      " />
+
+                  <source media="(min-width: 280px)" srcset="
+                                                        ./images/mobile/portafolio/poster.webp    1x,
+                                                        ./images/mobile/portafolio/poster@2x.webp 2x
+                                                      " type="image/webp" />
+
+                  <source media="(min-width: 280px)" srcset="
+                                                        ./images/mobile/portafolio/poster.jpg    1x,
+                                                        ./images/mobile/portafolio/poster@2x.jpg 2x
+                                                      " />
+
+                  <img src="./images/mobile/portafolio/poster.jpg" alt="TecnoCrack website" />
+                </picture>
+                <div class="portfolio-list__effect">
+                  <p class="portfolio-list__text">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Repellat laudantium natus, vero fugiat sed laborum dolorum
+                    sapiente provident hic asperiores reprehenderit quis qui
+                    numquam magnam autem, mollitia suscipit porro architecto.
+                  </p>
+                </div>
+              </div>
+              <h2 class="portfolio-title">
+                Poster New Orlean vs Golden Star
+              </h2>
+              <p class="portfolio-text">Design</p>
+            </a>
+          </li>
+
+          <li class="portfolio-list__item">
+            <a href="#" class="portfolio__link">
+              <div class="portfolio-list__thumb">
+                <picture>
+                  <source media="(min-width: 768px)" srcset="
+                                          ./images/tablet/portafolio/application.webp    1x,
+                                          ./images/tablet/portafolio/application@2x.webp 2x
+                                        " type="image/webp" />
+
+                  <source media="(min-width: 768px)" srcset="
+                                          ./images/tablet/portafolio/application.jpg    1x,
+                                          ./images/tablet/portafolio/application@2x.jpg 2x
+                                        " />
+
+                  <source media="(min-width: 280px)" srcset="
+                                          ./images/mobile/portafolio/application.webp    1x,
+                                          ./images/mobile/portafolio/application@2x.webp 2x
+                                        " type="image/webp" />
+
+                  <source media="(min-width: 280px)" srcset="
+                                          ./images/mobile/portafolio/application.jpg    1x,
+                                          ./images/mobile/portafolio/application@2x.jpg 2x
+                                        " />
+                  <img src="./images/mobile/portafolio/application.jpg" alt="Restaurant Seafood" />
+                </picture>
+                <div class="portfolio-list__effect">
+                  <p class="portfolio-list__text">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Repellat laudantium natus, vero fugiat sed laborum dolorum
+                    sapiente provident hic asperiores reprehenderit quis qui
+                    numquam magnam autem, mollitia suscipit porro architecto.
+                  </p>
+                </div>
+              </div>
+              <h2 class="portfolio-title">Seafood Restaurant</h2>
+              <p class="portfolio-text">App</p>
+            </a>
+          </li>
+
+          <li class="portfolio-list__item">
+            <a href="#" class="portfolio__link">
+              <div class="portfolio-list__thumb">
+                <picture>
+                  <source media="(min-width: 768px)" srcset="
+                                          ./images/tablet/portafolio/marketing.webp    1x,
+                                          ./images/tablet/portafolio/marketing@2x.webp 2x
+                                        " type="image/webp" />
+
+                  <source media="(min-width: 768px)" srcset="
+                                          ./images/tablet/portafolio/marketing.jpg    1x,
+                                          ./images/tablet/portafolio/marketing@2x.jpg 2x
+                                        " />
+
+                  <source media="(min-width: 280px)" srcset="
+                                          ./images/mobile/portafolio/marketing.webp    1x,
+                                          ./images/mobile/portafolio/marketing@2x.webp 2x
+                                        " type="image/webp" />
+
+                  <source media="(min-width: 280px)" srcset="
+                                          ./images/mobile/portafolio/marketing.jpg    1x,
+                                          ./images/mobile/portafolio/marketing@2x.jpg 2x
+                                        " />
+
+                  <img src="./images/mobile/portafolio/marketing.jpg" alt="Project Prime" />
+                </picture>
+                <div class="portfolio-list__effect">
+                  <p class="portfolio-list__text">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Repellat laudantium natus, vero fugiat sed laborum dolorum
+                    sapiente provident hic asperiores reprehenderit quis qui
+                    numquam magnam autem, mollitia suscipit porro architecto.
+                  </p>
+                </div>
+              </div>
+              <h2 class="portfolio-title">Project Prime</h2>
+              <p class="portfolio-text">Marketing</p>
+            </a>
+          </li>
+
+          <li class="portfolio-list__item">
+            <a href="#" class="portfolio__link">
+              <div class="portfolio-list__thumb">
+                <picture>
+                  <source media="(min-width: 768px)" srcset="
+                                          ./images/tablet/portafolio/boxes.webp    1x,
+                                          ./images/tablet/portafolio/boxes@2x.webp 2x
+                                        " type="image/webp" />
+
+                  <source media="(min-width: 768px)" srcset="
+                                          ./images/tablet/portafolio/boxes.jpg    1x,
+                                          ./images/tablet/portafolio/boxes@2x.jpg 2x
+                                        " />
+
+                  <source media="(min-width: 280px)" srcset="
+                                          ./images/mobile/portafolio/boxes.webp    1x,
+                                          ./images/mobile/portafolio/boxes@2x.webp 2x
+                                        " type="image/webp" />
+
+                  <source media="(min-width: 280px)" srcset="
+                                          ./images/mobile/portafolio/boxes.jpg    1x,
+                                          ./images/mobile/portafolio/boxes@2x.jpg 2x
+                                        " />
+
+                  <img src="./images/mobile/portafolio/boxes.jpg" alt="`Project boxes" />
+                </picture>
+                <div class="portfolio-list__effect">
+                  <p class="portfolio-list__text">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Repellat laudantium natus, vero fugiat sed laborum dolorum
+                    sapiente provident hic asperiores reprehenderit quis qui
+                    numquam magnam autem, mollitia suscipit porro architecto.
+                  </p>
+                </div>
+              </div>
+              <h2 class="portfolio-title">Project Boxes</h2>
+              <p class="portfolio-text">App</p>
+            </a>
+          </li>
+
+          <li class="portfolio-list__item">
+            <a href="#" class="portfolio__link">
+              <div class="portfolio-list__thumb">
+                <picture>
+                  <source media="(min-width: 768px)" srcset="
+                                        ./images/tablet/portafolio/screen.webp    1x,
+                                        ./images/tablet/portafolio/screen@2x.webp 2x
+                                      " type="image/webp" />
+
+                  <source media="(min-width: 768px)" srcset="
+                                        ./images/tablet/portafolio/screen.jpg    1x,
+                                        ./images/tablet/portafolio/screen@2x.jpg 2x
+                                      " />
+
+                  <source media="(min-width: 280px)" srcset="
+                                        ./images/mobile/portafolio/screen.webp    1x,
+                                        ./images/mobile/portafolio/screen@2x.webp 2x
+                                      " type="image/webp" />
+
+                  <source media="(min-width: 280px)" srcset="
+                                        ./images/mobile/portafolio/screen.jpg    1x,
+                                        ./images/mobile/portafolio/screen@2x.jpg 2x
+                                      " />
+
+                  <img src="./images/mobile/portafolio/screen.jpg" alt="Inspiracion no tiene limites" />
+                </picture>
+                <div class="portfolio-list__effect">
+                  <p class="portfolio-list__text">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Repellat laudantium natus, vero fugiat sed laborum dolorum
+                    sapiente provident hic asperiores reprehenderit quis qui
+                    numquam magnam autem, mollitia suscipit porro architecto
+                  </p>
+                </div>
+              </div>
+              <h2 class="portfolio-title">Inspiration has no Borders</h2>
+              <p class="portfolio-text">App</p>
+            </a>
+          </li>
+
+          <li class="portfolio-list__item">
+            <a href=" #" class="portfolio__link">
+              <div class="portfolio-list__thumb">
+                <picture>
+                  <source media="(min-width: 768px)" srcset="
+                                        ./images/tablet/portafolio/magazine.webp    1x,
+                                        ./images/tablet/portafolio/magazine@2x.webp 2x
+                                      " type="image/webp" />
+
+                  <source media="(min-width: 768px)" srcset="
+                                        ./images/tablet/portafolio/magazine.jpg    1x,
+                                        ./images/tablet/portafolio/magazine@2x.jpg 2x
+                                      " />
+
+                  <source media="(min-width: 280px)" srcset="
+                                        ./images/mobile/portafolio/magazine.webp    1x,
+                                        ./images/mobile/portafolio/magazine@2x.webp 2x
+                                      " type="image/webp" />
+
+                  <source media="(min-width: 280px)" srcset="
+                                        ./images/mobile/portafolio/magazine.jpg    1x,
+                                        ./images/mobile/portafolio/magazine@2x.jpg 2x
+                                      " />
+
+                  <img src="./images/mobile/portafolio/magazine.jpg" alt="Edicion limitada" />
+                </picture>
+                <div class="portfolio-list__effect">
+                  <p class="portfolio-list__text">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Repellat laudantium natus, vero fugiat sed laborum dolorum
+                    sapiente provident hic asperiores reprehenderit quis qui
+                    numquam magnam autem, mollitia suscipit porro architecto
+                  </p>
+                </div>
+              </div>
+              <h2 class="portfolio-title">Limited Edition</h2>
+              <p class="portfolio-text">Design</p>
+            </a>
+          </li>
+
+          <li class="portfolio-list__item">
+            <a href="#" class="portfolio__link">
+              <div class="portfolio-list__thumb">
+                <picture>
+                  <source media="(min-width: 768px)" srcset="
+                                          ./images/tablet/portafolio/labeltag.webp    1x,
+                                          ./images/tablet/portafolio/labeltag@2x.webp 2x
+                                        " type="image/webp" />
+
+                  <source media="(min-width: 768px)" srcset="
+                                          ./images/tablet/portafolio/labeltag.jpg    1x,
+                                          ./images/tablet/portafolio/labeltag@2x.jpg 2x
+                                        " />
+
+                  <source media="(min-width: 280px)" srcset="
+                                          ./images/mobile/portafolio/labeltag.webp    1x,
+                                          ./images/mobile/portafolio/labeltag@2x.webp 2x
+                                        " type="image/webp" />
+
+                  <source media="(min-width: 280px)" srcset="
+                                          ./images/mobile/portafolio/labeltag.jpg    1x,
+                                          ./images/mobile/portafolio/labeltag@2x.jpg 2x
+                                        " />
+
+                  <img src="./images/mobile/portafolio/labeltag.jpg" alt="Project Lab" />
+                </picture>
+                <div class="portfolio-list__effect">
+                  <p class="portfolio-list__text">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Repellat laudantium natus, vero fugiat sed laborum dolorum
+                    sapiente provident hic asperiores reprehenderit quis qui
+                    numquam magnam autem, mollitia suscipit porro architecto
+                  </p>
+                </div>
+              </div>
+              <h2 class="portfolio-title">Project LAB</h2>
+              <p class="portfolio-text">Marketing</p>
+            </a>
+          </li>
+
+          <li class="portfolio-list__item">
+            <a href="#" class="portfolio__link">
+              <div class="portfolio-list__thumb">
+                <picture>
+                  <source media="(min-width: 768px)" srcset="
+                                          ./images/tablet/portafolio/laptop.webp    1x,
+                                          ./images/tablet/portafolio/laptop@2x.webp 2x
+                                        " type="image/webp" />
+
+                  <source media="(min-width: 768px)" srcset="
+                                          ./images/tablet/portafolio/laptop.jpg    1x,
+                                          ./images/tablet/portafolio/laptop@2x.jpg 2x
+                                        " />
+
+                  <source media="(min-width: 280px)" srcset="
+                                          ./images/mobile/portafolio/laptop.webp    1x,
+                                          ./images/mobile/portafolio/laptop@2x.webp 2x
+                                        " type="image/webp" />
+
+                  <source media="(min-width: 280px)" srcset="
+                                          ./images/mobile/portafolio/laptop.jpg    1x,
+                                          ./images/mobile/portafolio/laptop@2x.jpg 2x
+                                        " />
+
+                  <img src="./images/mobile/portafolio/laptop.jpg" alt="Growing Bussines App" />
+                </picture>
+
+                <div class="portfolio-list__effect">
+                  <p class="portfolio-list__text">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Repellat laudantium natus, vero fugiat sed laborum dolorum
+                    sapiente provident hic asperiores reprehenderit quis qui
+                    numquam magnam autem, mollitia suscipit porro architecto
+                  </p>
+                </div>
+              </div>
+              <h2 class="portfolio-title">Growing Bussines</h2>
+              <p class="portfolio-text">App</p>
+            </a>
+          </li>
+        </ul>
+
+      </div>
+
+
+    </section>
+  </main>
+
+  <!--footer-->
+  <footer class="footer">
+    <div class="container footer-flexbox">
+      <div>
+        <a class="logo" href="">WebStudio</a>
+        <address class="address">
+          <a class="address" href="https://goo.gl/maps/dBykvgHUBU18GHkaA" target="_blank">Calz. Ticomán 500, Ciudad de
+            México, CDMX, México</a>
+        </address>
+        <ul class="contact">
+          <li class="contact__item">
+            <a class="contact__footer" href="mailto:info@example.com">info@example.com</a>
+          </li>
+          <li class="contact__item">
+            <a class="contact__footer" href="tel:+525555296000">+52 55 55 29 60 00</a>
+          </li>
+        </ul>
+        </address>
+      </div>
+      <!-- FOOTER -->
+      <div class="footer-social-links">
+        <h2 class="footer-title">encuentrenos en</h2>
+        <ul class="footer-list-item">
+          <li>
+            <a class="footer-icons" href="#">
+              <svg width="20" height="20">
+                <use href="./images/icons.svg#instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a class="footer-icons" href="#">
+              <svg width="20" height="20">
+                <use href="./images/icons.svg#twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a class="footer-icons" href="#">
+              <svg width="20" height="20">
+                <use href="./images/icons.svg#facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a class="footer-icons" href="#">
+              <svg width="20" height="20">
+                <use href="./images/icons.svg#linkedin"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <!-- FOOTER  SUSCRIBASE-->
+      <div class="footer-form">
+        <p class="footer-title footer-form__head">suscribase al boletin informativo</p>
+        <form action="#" class="footer-form__modal">
+          <label class="footer-form__email-label">
+            <input class="footer-form__modal-input" type="email" name="email-name" placeholder="E-mail" required>
+          </label>
+          <button type="submit" class="hero__button-primary footer-form__btn">
+            suscribase
+            <svg class="icon-suscribe" width="24" height="24">
+              <use href="./images/icons.svg#icon-subscribe"></use>
+            </svg>
+          </button>
+        </form>
+      </div>
+    </div>
+  </footer>
+  <script src="./js/menu.js"></script>
+</body>
+
+</html>

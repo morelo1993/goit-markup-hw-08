@@ -1,0 +1,36 @@
+.footer-form__head {
+  display: block;
+}
+.footer-form__modal {
+  display: flex;
+  flex-direction: column;
+  @media (min-width: 1200px) {
+    flex-direction: row;
+  }
+}
+.footer-form__email-label {
+  margin-right: 10px;
+  .footer-form__modal-input {
+    @extend %footer-form__modal-input;
+    @media (min-width: 480px) {
+      display: block;
+      width: 450px;
+      @media (min-width: 1200px) {
+        display: block;
+        width: 350px;
+      }
+    }
+
+    &:hover,
+    &:focus {
+      border-color: $accent-color;
+      outline: $accent-color;
+      transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+  }
+}
+
+.footer-form__btn {
+  @include footer-form__btn(center, center);
+  @extend %footer-form__btn;
+}

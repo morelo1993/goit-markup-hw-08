@@ -1,0 +1,302 @@
+// Header Seccion//
+%header {
+  border: 1px solid $folio-border;
+  height: 80px;
+}
+%navbar__logo {
+  font-family: 'Raleway', sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.2;
+  text-decoration: none;
+  color: $accent-color;
+}
+%navbar__menu {
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  list-style: none;
+  gap: 80px;
+}
+%navbar__link {
+  color: $primary-black-color;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.4;
+
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  text-transform: capitalize;
+  position: relative;
+  cursor: pointer;
+}
+%booking {
+  display: flex;
+  list-style: none;
+  gap: 80px;
+}
+%booking__link {
+  color: $primary-text-color;
+  font-weight: 500;
+  font-size: 14px;
+
+  line-height: 20px;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  height: 20px;
+}
+
+// Hero Seccion//
+
+%hero__button-primary {
+  background-color: $accent-color;
+  color: $primary-white-color;
+
+  border: none;
+  border-radius: 4px;
+  outline: none;
+  font-size: 16px;
+  font-weight: 700;
+
+  text-transform: capitalize;
+  padding: 10px 30px;
+
+  margin: 0 auto;
+  display: block;
+}
+
+//Features
+%feature-list__title {
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: $primary-black-color;
+  margin-bottom: 10px;
+}
+%feature-list__desciption {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.71;
+  color: $primary-text-color;
+}
+%images-wedo__title {
+  position: absolute;
+  bottom: 2px;
+  left: 0;
+  text-align: center;
+  padding: 27px;
+  width: 373px;
+  height: 70px;
+  color: $primary-white-color;
+  background-color: rgba(47, 48, 58, 0.8);
+}
+
+%team-members__title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  color: $primary-black-color;
+  text-align: center;
+  margin: 20px 0 10px 0;
+}
+%team-members__text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.18;
+  color: $primary-text-color;
+  text-align: center;
+  margin-bottom: 30px;
+}
+%clients-list__item {
+  border: solid 1px $gray-2;
+  border-radius: 5px;
+  width: 210px;
+  height: 92px;
+  cursor: pointer;
+}
+%address {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  color: $primary-white-color;
+  margin-bottom: 5px;
+  width: 231px;
+  display: block;
+}
+%contact__footer {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  color: $gray-2;
+  margin-bottom: 5px;
+}
+%footer-title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 31px;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+%footer-form__modal-input {
+  width: 100%;
+  height: 50px;
+  padding: 15px 16px;
+  box-sizing: border-box;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  background: $background-black-dark;
+  color: $primary-white-color;
+  margin-bottom: 20px;
+}
+%footer-form__btn {
+  width: 200px;
+  height: 50px;
+  padding: 20px 20px;
+}
+%modal-form-title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  color: $primary-black-color;
+  margin-bottom: 12px;
+}
+%modal-form-label {
+  font-style: normal;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+
+  position: relative;
+  width: 100%;
+  margin-bottom: 14px;
+}
+%modal-form__input {
+  width: 100%;
+  padding: 12px 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
+%modal-form__icon {
+  position: absolute;
+  display: block;
+  top: 35px;
+  left: 12px;
+  transform: translateY(-50%);
+  width: 18px;
+  height: 18px;
+}
+%modal-form-field {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  color: $primary-text-color;
+}
+%modal-form-message {
+  width: 100%;
+  height: 120px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  resize: none;
+  padding: 12px 16px;
+  margin-top: 4px;
+}
+%modal-form-checkbox {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+%modal-form-label-checkbox {
+  font-weight: 400;
+  line-height: 1.71;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+%modal-form-icon-check {
+  width: 26px;
+  height: 15px;
+  border: 2px solid $primary-black-color;
+  border-radius: 2px;
+}
+%modal-form-submit {
+  width: 200px;
+  height: 50px;
+  padding: 10px 55px;
+  margin: 0 auto;
+  cursor: pointer;
+
+  color: $primary-white-color;
+  background-color: $accent-color;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: 1px solid transparent;
+  border-radius: 4px;
+
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  outline: transparent;
+}
+%filter__buttons {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  color: $primary-black-color;
+  background-color: $background-light;
+  cursor: pointer;
+  padding: 6px 22px;
+  border-radius: 4px;
+  border: none;
+}
+%portfolio-list__effect {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 63px 24px;
+  background: rgba(33, 150, 243, 0.9);
+  overflow: auto;
+
+  transform: translatey(100%);
+  transition: transform 250ms ease;
+}
+%portfolio-list__text {
+  font-style: normal;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  width: 100%;
+  color: $primary-white-color;
+}
+%portfolio-title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.9;
+  letter-spacing: 0.06em;
+  color: $primary-black-color;
+  padding: 15px;
+  margin-bottom: 4px;
+}
+%portfolio-text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.8;
+  color: $primary-text-color;
+  padding: 15px;
+}

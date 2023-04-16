@@ -1,0 +1,10 @@
+.images-wedo {
+  @include images-wedo(30px);
+}
+.images-wedo__item {
+  flex-basis: calc((100% - 90px) / 3);
+  position: relative;
+  .images-wedo__title {
+    @extend %images-wedo__title;
+  }
+}
